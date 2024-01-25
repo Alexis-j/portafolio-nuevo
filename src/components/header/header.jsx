@@ -1,10 +1,16 @@
 // Header.jsx
+
+import React from 'react';
+import Logo from './logo'; // Importa el componente Logo
+import NavListDrawer from './navListDrawer';
 import '../../styles/header.css';
-import NavListDrawer from "./navListDrawer.jsx";
 
 function Header() {
   return (
-    <NavListDrawer /> // <--- This is the only line that changes
+    <div className="header">
+      <Logo />
+      <NavListDrawer />
+    </div>
   );
 }
 

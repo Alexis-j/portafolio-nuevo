@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import '../../styles/navListDrawer.css';
 
-const Navbar = () => {
+const NavListDawer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,12 +17,12 @@ const Navbar = () => {
         <div className={`menu-icon-line ${isMenuOpen ? 'open' : ''}`}></div>
       </div>
       <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/contact">Wild Life</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><a href="/about" className="menu-link">About Me</a></li>
+        <li><a href="/contact" className="menu-link">Projects</a></li>
+        <li><a href="/contact" className="menu-link">contact</a></li>
       </ul>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavListDawer;

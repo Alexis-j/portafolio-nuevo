@@ -1,11 +1,4 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.header-title {
+.logo {
   margin: 0;
   font-size: 25px;
   font-weight: var(--font-weight-bold);
