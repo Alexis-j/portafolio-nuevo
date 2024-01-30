@@ -1,7 +1,11 @@
 .logo {
+  display: flex;
+  align-items: center;
   margin: 0;
-  font-size: 25px;
-  font-weight: var(--font-weight-bold);
-  color:var(--links-color);
+  font-size: var(--font-size-logo);
+  color: var(--links-color);
   font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  text-decoration: none;
 }

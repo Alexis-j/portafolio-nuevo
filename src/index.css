@@ -2,10 +2,17 @@
 :root {
   --primary-color: #007bff;
   --links-color: #38393a;
+  --links-color-hover: rgba(0,0,0,0.07);
   --font-family-primary: 'Muli', sans-serif;
   --font-family-secondary: 'Raleway', sans-serif;
+  --muli-light-italic: 'Muli Light Italic', sans-serif;
   --font-size-small: 14px;
   --font-size-medium: 16px;
   --font-size-large: 18px;
+  --font-size-logo: 24px;
   --font-weight-bold: bold;
+  --font-weight-semi-bold: 600;
+  --font-weight-normal: normal;
+  --font-weight-light: lighter;
+
 }

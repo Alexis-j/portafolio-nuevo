@@ -1,14 +1,30 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
 }
 
-.header-title {
+.nav-menu ul {
+  display: flex;
+  list-style: none;
   margin: 0;
-  font-size: 25px;
-  font-weight: var(--font-weight-bold);
-  color:var(--links-color);
-  font-family: var(--font-family-secondary);
+  padding: 6px 4px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--links-color);
+  font-family: var(--muli-light-italic);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  padding: 10px;
+}
+
+.menu-backdrop {
+  position: absolute;
+  background-color: var(--links-color-hover);
+  border-radius: 3px;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
 }

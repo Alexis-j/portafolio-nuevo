@@ -1,28 +1,30 @@
-// Navbar.jsx
+// NavListDrawer.jsx
 import React, { useState } from 'react';
 import '../../styles/navListDrawer.css';
 
-const NavListDawer = () => {
+function NavListDrawer() {
+  const [showMenu, setShowMenu] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    setShowMenu(!showMenu);
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar mobile-navbar ${isMenuOpen ? 'show' : ''}`}>
       <div className="menu-icon" onClick={toggleMenu}>
         <div className={`menu-icon-line ${isMenuOpen ? 'open' : ''}`}></div>
         <div className={`menu-icon-line ${isMenuOpen ? 'open' : ''}`}></div>
         <div className={`menu-icon-line ${isMenuOpen ? 'open' : ''}`}></div>
       </div>
-      <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
+      <ul className="menu">
         <li><a href="/about" className="menu-link">About Me</a></li>
         <li><a href="/contact" className="menu-link">Projects</a></li>
-        <li><a href="/contact" className="menu-link">contact</a></li>
+        <li><a href="/contact" className="menu-link">Contact</a></li>
       </ul>
     </nav>
   );
 }
 
-export default NavListDawer;
+export default NavListDrawer;

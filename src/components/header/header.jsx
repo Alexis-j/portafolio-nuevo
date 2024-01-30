@@ -1,16 +1,48 @@
 // Header.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from './logo'; // Importa el componente Logo
-import NavListDrawer from './navListDrawer';
 import '../../styles/header.css';
 
 function Header() {
+  const [menuBackdropStyle, setMenuBackdropStyle] = useState({});
+
+  const handleHover = (e) => {
+    const { left, top, width, height } = e.target.getBoundingClientRect();
+    setMenuBackdropStyle({
+      left: `${left}px`,
+      top: `${top}px`,
+      width: `${width}px`,
+      height: `${height}px`,
+      opacity: 1,
+      visibility: 'visible',
+    });
+  };
+
+  const mouseLeave = () => {
+    setMenuBackdropStyle({
+      opacity: 0,
+      visibility: 'hidden',
+    });
+  }
+
   return (
-    <div className="header">
+    <header className="header">
       <Logo />
-      <NavListDrawer />
-    </div>
+      <nav className="nav-menu">
+        <ul id="nav-menu" className="nav-link">
+          <li><a href="/" onMouseEnter={handleHover}>About Me</a></li>
+          <li><a href="/" onMouseEnter={handleHover}>Projects</a></li>
+          <li><a href="/" onMouseEnter={handleHover}>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div
+        id="menu-backdrop"
+        className='menu-backdrop'
+        style={menuBackdropStyle}
+      ></div>
+    </header>
   );
 }
 
