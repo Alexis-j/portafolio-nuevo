@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 6px 4px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--links-color);
+  font-family: var(--muli-light-italic);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  padding: 10px;
+}
+
+.menu-backdrop {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--links-color-hover);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}

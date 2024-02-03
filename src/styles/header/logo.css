@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: var(--font-size-logo);
+  color: var(--links-color);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  text-decoration: none;
+}
+

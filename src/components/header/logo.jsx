@@ -1,6 +1,6 @@
 // Logo.jsx
 import React from 'react';
-import '../../styles/logo.css';
+import '../../styles/header/logo.css';
 
 function Logo() {
   return (

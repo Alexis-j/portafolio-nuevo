@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/navListDrawer.css';
+import '../../styles/header/navListDrawer.css';
 
 function NavListDrawer() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

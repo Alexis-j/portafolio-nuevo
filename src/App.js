@@ -1,9 +1,14 @@
-import Header from './components/header/header.jsx'
+import React from 'react';
 import './App.css';
+import Header from './components/header/header.jsx'
+import Hero from './components/hero/hero.jsx'
 
 function App() {
   return (
-    < Header />
+    <>
+      < Header />
+      < Hero />
+    </>
   );
 }
 

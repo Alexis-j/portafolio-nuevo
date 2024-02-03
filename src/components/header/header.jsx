@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './logo';
 import NavListDrawer from './navListDrawer'; // Importa el componente NavListDrawer
-import '../../styles/header.css';
+import '../../styles/header/header.css';
 
 function Header() {
   const [menuBackdropStyle, setMenuBackdropStyle] = useState({});

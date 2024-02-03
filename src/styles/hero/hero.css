@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  gap: 2rem;
+}
+
+.photo-container {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.hero-photo {
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+/* aqui termina la foto*/
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 0;
+  }
+
+  
+}
